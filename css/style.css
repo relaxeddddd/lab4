@@ -1,0 +1,277 @@
+/*================ОБНУЛЕНИЕ СТИЛЕЙ================*/
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+
+body {
+    line-height: 1;
+    font-family: "";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: "";
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+/*================ОБНУЛЕНИЕ СТИЛЕЙ================*/
+
+body{
+	background: linear-gradient(90deg, #c0392b, #8e44ad); 
+    height: 100%;
+}
+
+header{
+    border-bottom: brown 1 px solid;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 50px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*====================НАВИГАЦИЯ====================*/
+
+.navigatoin{
+    position: relative;
+    height: 55px;
+    margin-bottom: 90px;
+
+}
+
+.navigatoin__spisok{
+    display: flex;   
+    float: right;
+    height: 55px;
+    align-items: center;
+}
+
+
+.navigatoin__spisok-li{
+
+    margin-left: 25px;
+    align-items: center;
+
+    text-shadow: rgb(255, 0, 242) 0px 0px 20px;
+
+    color: #eb9f07;
+    font-size: 30px;
+
+    transition: .3s;
+}
+
+
+.navigatoin__spisok-li::after{
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background-color: #eb9f07;
+
+    transition: .5s;
+}
+
+.navigatoin__spisok-li:hover{
+    color: #ffb700;
+    text-shadow: rgb(95, 73, 12) 1px 2px 20px;
+}
+
+.navigatoin__spisok-li:hover::after{
+    color: #ffb700;
+    width: 100%;
+}
+
+
+
+/*====================ПОИСК====================*/
+
+.navigatoin__spisok-search{
+    display: flex;
+    position: absolute;
+    background-color: #994296;
+    border-radius: 40px;
+    height: 55px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: tomato 0px 0px 20px;
+}
+
+#search{
+    margin: 0 10px 0 0;
+    padding: 0 10px;
+    width: 240px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: #c97ae5;
+}
+
+#search:focus{
+    background-color: #c798d9;
+}
+
+.button-img{
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.button{
+    background-color: transparent;
+}
+
+/*====================ПОИСК====================*/
+
+/*====================НАВИГАЦИЯ====================*/
+
+
+/*====================ДГТУ====================*/
+.information {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.information__row {
+    flex: 0 1 50%;
+    margin-bottom: 50px;
+}
+
+.information__row-photo {
+    
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.information__row-img {
+    border: #ffb700 2px solid;
+    width: 550px;
+    height: 320px;
+    border-radius: 30px;
+}
+.information__row-title {
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-size: 40px;
+}
+
+.information__row-text {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: #ffb700;
+}
+
+/*====================ДГТУ====================*/
+
+h2{
+    text-align: center;
+    font-size: 45px;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer__list{
+    text-align: center;
+}
+
+.footer__list>li{
+    color: #ffb700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
